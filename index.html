@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS </title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .head {
+            color: crimson;
+            text-decoration: underline;
+            margin-left: 30px;
+            margin-right: 30px;
+            border: 5px solid yellowgreen;
+            border-radius: 5px;
+        }
+        
+        .des {
+            background-color: rgb(17, 231, 203);
+            border: 2px solid rgb(184, 247, 11);
+            font-size: 19px;
+            margin-left: 30px;
+            margin-right: 30px;
+            border: 5px solid yellowgreen;
+            border-radius: 5px;
+        }
+        
+        .int {
+            margin-top: 5px;
+            border: 2px solid maroon;
+        }
+        
+        #int_css {
+            margin-left: 300px;
+            margin-right: 300px;
+            font-size: 50px;
+            font-weight: bolder;
+            color: tomato;
+            text-align: center;
+            border: 2px solid green;
+            border-radius: 5px;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 40px;
+        }
+        
+        .tbl1 {
+            margin-top: 5px;
+            margin-left: 30px;
+            margin-right: 30px;
+            border: 5px solid yellowgreen;
+            border-radius: 5px;
+        }
+        
+        .lst1 {
+            margin-top: 5px;
+            margin-left: 30px;
+            margin-right: 30px;
+            border: 5px solid yellowgreen;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .lst2 {
+            margin-top: 5px;
+            margin-left: 30px;
+            margin-right: 30px;
+            border: 5px solid yellowgreen;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .tbl2 {
+            margin-top: 5px;
+            margin-bottom: 25px;
+            margin-left: 30px;
+            margin-right: 30px;
+            border: 5px solid yellowgreen;
+            border-radius: 5px;
+        }
+        
+        .t-tags {
+            margin-left: 30px;
+            margin-right: 30px;
+            border: 5px solid yellowgreen;
+            border-radius: 5px;
+        }
+        
+        .list-tags {
+            margin-left: 30px;
+            margin-right: 30px;
+            border: 5px solid yellowgreen;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="int">
+        <h1 id="int_css"><strong>In-Line and Interal Css Practicing...</h1>
+            <div id="tbl">
+                <div class="des">A table in HTML consists of table cells inside rows and columns.</div>
+                <pre class="t-tags">
+            Some table tags are listed below:-
+                &lttr&gt - represents rows.
+                &lttd&gt - used to create data cells.
+                &ltth&gt - used to add table headings.
+                &ltcaption&gt - used to insert captions.
+                &ltthead&gt - adds a separate header to the table.
+                &lttbody&gt - shows the main body of the table.
+                &lttfoot&gt - creates a separate footer for the table.</pre>
+                
+                <div class="tbl1">
+                    <h1 class="head"> A table looks lile below</h1>
+                        <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Contact</th>
+                        </tr>
+                        <tr>
+                            <td>Md. Hasan</td>
+                            <td>Md. Hossain</td>
+                            <td>Md. Shafinur</td>
+                        </tr>
+                        <tr>
+                            <td>Rafik</td>
+                            <td>Jabbar</td>
+                            <td>Marjuk</td>
+                        </tr>
+                    </table>
+                </div>
+                    <div class="tbl2">
+                        <table>
+                            <colgroup>
+                                <col span="2" style="background-color: #D6EEEE">
+                              </colgroup>
+                           <tr>
+                            <th colspan="2">Name</th>
+                            <th >Job</th>
+                            <th >Tel</th>
+                           </tr>
+                           <tr>
+                            <td>Hasan </td>
+                            <td>Imam </td>
+                            <td>Private</td>
+                            <td>0197000000 </td>
+                           </tr>
+                        </table>
+                </div>
+                   </div>
+            <div id="lst">
+                <div class="des">HTML lists allow web developers to group a set of related items in lists.
+                </div>
+                <pre class="list-tags" style="color:blue;">
+            Some list tags are listed below:-
+            &ltul&gt,&ltli&gt,&ltol&gt,&ltdl&gt,&ltdt&gt,&ltdd&gt 
+                </pre>
+                
+                <div class="lst1">
+                    <h1 class="head"> A list looks lile below</h1>
+                    <h2 class="head">An unordered HTML list</h2>
+                    
+                    <ul>
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                    </ul> 
+                </div>
+                <div class="lst2">
+                    <h2 class="head">An unordered HTML list</h2>
+                    <ol>
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                      </ol>
+                </div>
+                   </div>
+    </div>
+    <div class="ext">
+        <h1 id="ext_css"><strong>External Css Practicing...</h1>
+        <div id="block-element">
+            <p class="descrp">A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element. A block-level element always takes up the full width available (stretches out to the left and right
+                as far as it can).</p>
+                <h1 class="heading"> Some Block level elements listed below</h1>
+                <p class="tags">
+                    &ltaddress&gt, &ltarticle&gt,&ltaside&gt,&ltblockquote&gt,&ltcanvas&gt, &ltdd&gt,&ltdiv&gt,&ltdl&gt,&ltdt&gt,&ltfieldset&gt,&ltdl&gt,&ltdt&gt, &ltfieldset&gt,&ltfigcaption&gt,&ltfigure&gt,&ltfooter&gt,&ltform&gt, &lth1&gt to &lth6&gt,&ltheader&gt,&lthr&gt,&ltli&gt,&ltmain&gt,&ltnav&gt,
+                    &ltnoscript&gt,&ltol&gt,&ltp&gt,&ltpre&gt,&ltsection&gt,&lttable&gt, &lttfoot&gt,&ltul&gt,&ltvideo&gt.
+                </p>
+                <h2 class="heading">Examples of block elements furnished below. Where the h2 tag takes whole width of the screen!</h2>
+                <img src="img/block-level_element.png" alt="block_elements" width=100%>
+
+            </div>
+       
+        <div id="in-line">
+            <p class="descrp">An inline element does not start on a new line.An inline element only takes up as much width as necessary.This is a <mark><strong>&ltspan&gt</strong></mark> element inside a paragraph.</p>
+            <h1 class="heading"> Some In-Line elements listed below</h1>
+            <p class="tags">
+                &lta&gt,&ltabbr&gt,&ltacronym&gt,&ltb&gt,&ltbdo&gt,&ltbig&gt,&ltbr&gt,&ltbutton&gt,&ltcite&gt,&ltcode&gt,&ltdfn&gt,&ltem&gt,&lti&gt,&ltimg&gt,&ltinput&gt,&ltkbd&gt,&ltlabel&gt,&ltmap&gt,&ltobject&gt,&ltoutput&gt,&ltq&gt,&ltsamp&gt&,ltscript&gt,&ltselect&gt,&ltsmall&gt,&ltspan&gt,&ltstrong&gt,&ltsub&gt,&ltsup&gt,&lttextarea&gt,&lttime&gt,&lttt&gt,&ltvar&gt
+            </p>
+            <span class="descrp">Examples of in-line elements furnished below , Where the span tag takes takes up as much width as necessary!</span>
+            <img src="img/inline_elements.png" alt="inline_elements" width=100%>
+    </div>
+    </div>
+</body>
+
+</html>
